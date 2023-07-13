@@ -96,4 +96,6 @@ python evaluate_single_example.py
 
 ## License
 
-Add license here
+Copyright (c) 2023 Sarthak Bhagat, Simon Stepputtis, Joseph Campbell, Katia Sycara
+
+For license information, see the license.

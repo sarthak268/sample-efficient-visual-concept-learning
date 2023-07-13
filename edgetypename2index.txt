@@ -1,0 +1,26 @@
+0:on
+1:has
+2:in
+3:of
+4:wearing
+5:on the
+6:with
+7:is on
+8:behind
+9:holding
+10:on top of
+11:has a
+12:in the
+13:near
+14:is wearing
+15:is on the
+16:next to
+17:on a
+18:is in
+19:wears
+20:sitting on top of
+21:under
+22:by
+23:of the
+24:of a
+25:has attribute

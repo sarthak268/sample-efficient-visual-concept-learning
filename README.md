@@ -47,7 +47,7 @@ conda activate concept_learning
 
 * Download the images for <a href="http://visualgenome.org/">Visual Genome dataset</a>. <br>
 * Download the knowledge graph generated from Visual Genome and the augmented with <a href="https://wordnet.princeton.edu/">WordNet dataset</a> from <a href="https://drive.google.com/file/d/12qZD6LWI0xVSnKsQCBG7ehYhCeZB6LGC/view?usp=sharing">this link</a>. <br>
-* Download the pretrained embeddings from <a href="https://drive.google.com/drive/folders/1IG0WQL6rtmNW1PMntz464_d5v0NDT49b?usp=sharing">this link</a>.
+* Download the GloVe pretrained embeddings from <a href="https://drive.google.com/drive/folders/1IG0WQL6rtmNW1PMntz464_d5v0NDT49b?usp=sharing">this link</a>.
 * We also need to prepare the ```.pth``` files for training our model. For this we need to create a directory called ```filtered_data_train``` and ```filtered_data_test``` in the source directory. <br>
 Make sure you add only samples corresponding to the known concepts in the ```filtered_data_train``` and the images corresponding to the novel concepts can be placed in ```filtered_data_test```.<br>
 In each folder, we need to place all the ```.pth``` files where each sample is a dictionary with the following keys:<br>
@@ -74,9 +74,9 @@ python train_edge_prediction.py --ARGS argument_value
 Make sure you use a lower learning rate compared to the modified GSNN training.
 
 In order to add novel nodes to the model, create a directory called ```novel_class_images_1``` in the source directory.<br>
-Add all the images, provided by the SME corresponding to novel class, in the directory ```novel_class_images_1/novel_class_name``` in this folder.<br>
+Add all the images, provided by the SME corresponding to the novel class, in the directory ```novel_class_images_1/novel_class_name``` in this folder.<br>
 Make sure the image names denote the same ID as the corresponding ```.pth``` file. That is, the image in ```100.pth``` should be named ```100.jpg```. <br>
-Also, you should keep the name of the directory where the weights are saved, i.e. ```exp_name```, same as that of the trained GSNN model.<br>
+Also, you should keep the name of the directory where the weights are saved, i.e. ```exp_name```, the same as that of the trained GSNN model.<br>
 One alternative is that you use as both the arguments ```exp_name``` and ```load_exp_name``` the ```exp_name``` that you used when running ```train.py```.
 Following that, run this command to finetune the GSNN models to include the provided novel classes:
 
@@ -88,7 +88,7 @@ python finetune.py --ARGS argument_value
 
 To evaluate the finetuned model, simply run the previous command with the argument ```--evaluate_fine```.
 
-You could also evaluate the trained model to obtained the predicted concepts in each scene, in the following manner:
+You could also evaluate the trained model to obtain the predicted concepts in each scene, in the following manner:
 
 ```
 python evaluate_single_example.py

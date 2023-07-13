@@ -38,7 +38,7 @@ def evaluate(opt, encoder_net, gsnn_net, classifier, graph, novel_class_idx=[], 
 
     remaining_class_idx = [idx for idx in test_classes_idx if (idx not in novel_class_idx)]
 
-    dataset = data_pretrain_evaluation(opt, './filtered_data/', '/data/sarthak/VisualGenome/', \
+    dataset = data_pretrain_evaluation(opt, './filtered_data_test/', '/data/sarthak/VisualGenome/', \
                             novel_class_idx=novel_class_idx, test_classes_idx_detect=test_classes_idx_detect, \
                             remaining_class_idx=remaining_class_idx, only_novel_class=opt.evaluate_finetune_only_novel)
     dataloader = DataLoader(dataset, batch_size=opt.batchsize, shuffle=True, num_workers=0, drop_last=True)

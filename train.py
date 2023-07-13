@@ -50,7 +50,7 @@ def main():
         nodes_removal_idx_detect =[val for val in nodes_removal_idx_detect if val > 0]
 
     if opt.dataset == 'vg':
-        dataset = data_graph(opt=opt, data_dir='./filtered_data/', img_dir=opt.dataset_path, 
+        dataset = data_graph(opt=opt, data_dir='./filtered_data_train/', img_dir=opt.dataset_path, 
                             get_detection=True, take_subset=opt.take_subset, subset_ratio=opt.subset_ratio,
                             test_train_split=True, is_train=True, nodes_to_remove_vocab=nodes_removal_idx, 
                             nodes_to_remove_detections=nodes_removal_idx_detect)

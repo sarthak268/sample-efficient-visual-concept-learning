@@ -133,6 +133,8 @@ wandb/
 logs/
 results/
 filtered_data/
+filtered_data_train/
+filtered_data_test/
 novel_class_images_1/
 saved_models/
 pretrained_embeddings/

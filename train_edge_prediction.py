@@ -92,7 +92,7 @@ class data_graph_nodes(data.Dataset):
         
 def train():
     
-    dataset = data_graph_nodes( './filtered_data/', opt.dataset_path, is_train=True, add_no_connection=opt.add_no_connection)
+    dataset = data_graph_nodes( './filtered_data_train/', opt.dataset_path, is_train=True, add_no_connection=opt.add_no_connection)
     dataloader = DataLoader(dataset, batch_size=opt.batchsize, shuffle=True, num_workers=0, drop_last=True)
 
     print ('Data loaded...')

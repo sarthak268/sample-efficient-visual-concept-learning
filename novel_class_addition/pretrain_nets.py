@@ -43,13 +43,13 @@ def pretrainNetworks(pretrain_net, opt, novel_node_image, encoder_net, gsnn_net,
     test_classes_idx_detect =[val for val in test_classes_idx_detect if val > 0]
 
     novel_class_ratio = opt.novel_class_ratio
-    dataset = data_pretrain(opt, './filtered_data/', '/data/sarthak/VisualGenome/', novel_node_image, 
+    dataset = data_pretrain(opt, './filtered_data_test/', '/data/sarthak/VisualGenome/', novel_node_image, 
                                 novel_class_ratio=novel_class_ratio, 
                                 novel_class_idx=test_classes_idx, novel_class_idx_detect=test_classes_idx_detect, 
                                 prev_images=prev_images)
     dataloader = DataLoader(dataset, batch_size=opt.batchsize, shuffle=True, num_workers=0, drop_last=True)
     
-    test_dataset = data_pretrain(opt, './filtered_data/', '/data/sarthak/VisualGenome/', novel_node_image, 
+    test_dataset = data_pretrain(opt, './filtered_data_test/', '/data/sarthak/VisualGenome/', novel_node_image, 
                                     novel_class_ratio=novel_class_ratio, 
                                     novel_class_idx=test_classes_idx, novel_class_idx_detect=test_classes_idx_detect,
                                     prev_images=prev_images)

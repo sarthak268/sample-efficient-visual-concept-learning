@@ -163,7 +163,7 @@ def main():
             # Requires users to place novel images a directory called "novel_class_images_1", each image named: image_ID.jpg
             novel_image_names_full = glob.glob('./novel_class_images_1/{}/*'.format(novel_single_concept))
             novel_image_names = [img.split('/')[-1] for img in novel_image_names_full]
-            novel_image_names_1 = ['./filtered_data/' + name.split('.')[0] + '.pth' for name in novel_image_names]
+            novel_image_names_1 = ['./filtered_data_test/' + name.split('.')[0] + '.pth' for name in novel_image_names]
             img_list = []
             for file_name in novel_image_names_1:
                 file_content = torch.load(file_name)

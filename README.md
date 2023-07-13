@@ -1,6 +1,6 @@
 # Sample Efficient Learning of Novel Visual Concepts
 
-This is a Pytorch implementation of the paper <b><i>"Sample Efficient Learning of Novel Visual Concepts"</b></i> published in the Conference on Lifelong Learning Agents (CoLLAs), 2023.
+This is a PyTorch implementation of the paper <b><i><a href="https://arxiv.org/abs/2306.09482">"Sample Efficient Learning of Novel Visual Concepts"</a></b></i> published in the Conference on Lifelong Learning Agents (CoLLAs), 2023.
 
 ## Abstract
 

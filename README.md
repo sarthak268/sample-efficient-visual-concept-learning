@@ -28,7 +28,8 @@ In case you find our work useful, consider citing:
 1. [Environment Setup](#setup)
 2. [Dataset Preparation](#dataset-preparation)
 3. [Training our Model](#training)
-4. [License](#license)
+4. [Evaluating our Model](#evaluation)
+5. [License](#license)
 
 ## Setup
 
@@ -82,6 +83,8 @@ Following that, run this command to finetune the GSNN models to include the prov
 ```
 python finetune.py --ARGS argument_value
 ```
+
+## Evaluation
 
 To evaluate the finetuned model, simply run the previous command with the argument ```--evaluate_fine```.
 

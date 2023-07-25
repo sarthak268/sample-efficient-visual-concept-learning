@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Sample-Efficient Learning of Novel Visual Concepts">
+    <meta name="keywords" content="Sample Efficient, Object Recognition, CoLLAs 2023">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sample-Efficient Learning of Novel Visual Concepts</title>
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+    <link rel="stylesheet" href="./static/css/bulma.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./static/js/fontawesome.all.min.js"></script>
+    <script src="./static/js/bulma-carousel.min.js"></script>
+    <script src="./static/js/bulma-slider.min.js"></script>
+    <script src="./static/js/index.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered">
+                    <div class="column has-text-centered">
+                        <h1 class="title is-1 publication-title">Sample-Efficient Learning <br> of Novel Visual Concepts</h1>
+                        <div class="is-size-5 publication-authors">
+                            <span class="author-block">
+                                <a href="https://sarthak268.github.io/"><b>Sarthak Bhagat</b></a><sup>*</sup>,</span>
+                            <span class="author-block">
+                                    <a href="https://simonstepputtis.com"><b>Simon Stepputtis</b></a><sup>*</sup>,</span>
+                            <span class="author-block">
+                                <a href="https://sites.google.com/asu.edu/jcampbell/">Joseph Campbell</a>,</span>
+                            <span class="author-block">
+                                Katia Sycara</a></span>
+                        </div>
+                        <div class="is-size-5 publication-authors">
+                            <span class="author-block">The Robotics Institute, Carnegie Melon University</span>
+                        </div>
+                        <div class="is-size-5 publication-authors">
+                            <span class="author-block"><sup>*</sup>Denotes equal contribution</span>
+                        </div>
+                        <br>
+                        <div class="is-size-5 publication-authors">
+                            <span class="author-block">Spotlight Presentation at the <b><i>Conference on Lifelong Learning Agents</i></b> - CoLLAs 2023</span>
+                        </div>
+                        <div class="column has-text-centered">
+                            <div class="publication-links">
+                                <!-- PDF Link. -->
+                                <span class="link-block">
+                                    <a href="https://arxiv.org/abs/2306.09482"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fas fa-file-pdf"></i>
+                                        </span>
+                                <span>arXiv Paper</span>
+                                </a>
+                                </span>
+                                <!-- Teaser Video Link. -->
+                                <span class="link-block">
+                                    <a href="https://youtu.be/yElviO6vtV0"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fab fa-youtube"></i>
+                                        </span>
+                                <span>Introductory Video</span>
+                                </a>
+                                </span>
+                                <!-- Code Link. -->
+                                <span class="link-block">
+                                    <a href="https://github.com/sarthak268/sample-efficient-visual-concept-learning"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fab fa-github"></i>
+                                        </span>
+                                <span>Code</span>
+                                </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered">
+
+                <!-- Visual Effects. -->
+                <div class="column">
+                    <div class="content">
+                        <img src="static/assets/animation.gif" alt="Simulation task" width="70%" style="margin-left: 15%;">
+                    </div>
+                </div>
+                <!--/ Visual Effects. -->
+
+            </div>
+
+            <!-- Abstract. -->
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Abstract</h2>
+                    <div class="content has-text-justified">
+                        <p>
+                            Despite the advances made in visual object recognition, state-of-the-art deep learning models struggle to effectively recognize novel objects in a few-shot setting where only a limited number of examples are provided. Unlike humans who excel at such tasks,
+                            these models often fail to leverage known relationships between entities in order to draw conclusions about such objects. In this work, we show that incorporating a symbolic knowledge graph into a state-of-the-art recognition
+                            model enables a new approach for effective few-shot classification. In our proposed neuro-symbolic architecture and training methodology, the knowledge graph is augmented with additional relationships extracted from a small
+                            set of examples, improving its ability to recognize novel objects by considering the presence of interconnected entities. Unlike existing few-shot classifiers, we show that this enables our model to incorporate not only objects
+                            but also abstract concepts and affordances. The existence of the knowledge graph also makes this approach amenable to interpretability through analysis of the relationships contained within it. We empirically show that our
+                            approach outperforms current state-of-the-art few-shot multi-label classification methods on the COCO dataset and evaluate the addition of abstract concepts and affordances on the Visual Genome dataset.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--/ Abstract. -->
+
+            <!-- Paper video. -->
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Introduction Video (7 Minutes)</h2>
+                    <div class="publication-video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/S4GyhYA7HtE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <!--/ Paper video. -->
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container is-max-desktop content">
+
+            <div class="rows">
+
+                <div class="rows is-centered ">
+                    <di v class="row is-full-width">
+                        <h2 class="title is-3"><span class="dcliport">Learning Novel Concepts</span></h2>
+
+
+                        <!-- <h3 class="title is-4">Approach</h3> -->
+                        <div class="content has-text-justified">
+                            <p>
+                                This work presents an approach to achieve novel object recognition in a few-shot manner by synergistically combining the processing capabilities of neural image pipelines with the interpretability and expandability of symbolic knowledge in the form of
+                                a knowledge graph. This unique combination allows our approach to utilize symbolic knowledge during inference to detect visible objects and identify their non-visual properties, including attributes and affordances. This
+                                architecture also allows easy integration of novel concepts through addition of further domain knowledge to the graph.
+                            </p>
+                            <p>
+                                Our proposed approach demonstrates state-of-the-art performance in novel object recognition, outperforming existing methods when evaluated on the COCO novel object detection dataset. Additionally, it goes beyond existing work by allowing users to learn
+                                novel non-visual concepts in a few-shot manner. As an illustrative example, our approach successfully learns the concept of "edible" from just five sample images that demonstrate its usage in the context of hot-dogs, pizza,
+                                and sandwiches.
+                            </p>
+
+                        </div>
+                        <!-- <section class="section"> -->
+                        <div class="container is-max-desktop">
+
+                            <div class="columns is-centered">
+
+                                <!-- Visual Effects. -->
+                                <div class="column">
+                                    <div class="content">
+                                        <h2 class="title is-5">Learning Novel Attributes</h2>
+                                        <img src="static/assets/node_addition_attr.png" alt="Novel Attributes" width="100%">
+                                        <p>
+                                            Novel attributes are learned in a five- and fifteen-shot manner. Results are reported on 100 test images, 50 of which showed the novel concept.
+                                        </p>
+                                    </div>
+                                </div>
+                                <!--/ Visual Effects. -->
+
+                                <!-- Matting. -->
+                                <div class="column">
+                                    <h2 class="title is-5">Learning Novel Affordances</h2>
+                                    <div class="columns is-centered">
+                                        <div class="column content">
+                                            <img src="static/assets/node_addition_aff.png" alt="Novel Affordances" width="100%">
+                                            <p>
+                                                Novel affordances are learned in a five- and fifteen-shot manner. Results are reported on 100 test images, 50 of which showed the novel concept.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/ Matting. -->
+                            <div class="content has-text-justified">
+                                <p>
+                                    By integrating neural image processing and symbolic knowledge, our approach bridges the gap between visual recognition and conceptual understanding. This advancement not only enhances object recognition tasks but also opens up exciting possibilities for
+                                    capturing and leveraging non-visual knowledge in an efficient manner. To add a novel concept to the graph, the novel concept is added as an additional output neuron to the final classifier and is added to the knowledge
+                                    graph itself. In order to integrate the novel node into the graph, we introduce a novel multimodal transformer called RelaTe. This transformer leverages GloVe word embeddings to identify relevant connections between
+                                    the novel concept and other, already existing, nodes in the knowledge graph, utilizing contextual information from a small set of sample images, thus eliminating the need for further human involvement.
+                                </p>
+                                <p>
+                                    When evaluating our approach, we achieved an accuracy of 70.3% in detecting novel objects across 16 novel object classes. Moreover, our method demonstrated an accuracy of 66.7% when tasked with detecting novel non-visual concepts.
+                                </p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="BibTeX">
+        <div class="container is-max-desktop content">
+            <h2 class="title">BibTeX</h2>
+            <pre><code>@misc{bhagat2023sampleefficient,
+      title={Sample-Efficient Learning of Novel Visual Concepts}, 
+      author={Sarthak Bhagat and Simon Stepputtis and Joseph Campbell and Katia Sycara},
+      year={2023},
+      eprint={2306.09482},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}</code></pre>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column">
+                    <div class="content has-text-centered">
+                        <p>
+                            Website template borrowed from <a href="https://github.com/nerfies/nerfies.github.io">NeRFies</a> made by <a href="https://keunhong.com/">Keunhong Park</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
